@@ -1,0 +1,41 @@
+{
+  "Blogs": [
+    {
+      "id": 1,
+      "name": "Smashing Magazine",
+      "author" : "Alice Johnson",
+      "description": "A leading source for web designers and developers, offering articles on web design, front-end development, UX, UI, and accessibility.",
+      "imageUrl": "https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/83bd8db5-08b6-44d5-8144-773edbc40533/smashingmag-print-mailing-banner.png"
+    },
+    {
+      "id": 2,
+      "name": "CSS-Tricks",
+      "author" : "Michael Lee",
+      "description": "Famous for practical tutorials and tips on CSS, JavaScript, and front-end development techniques.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZn3mjLYbMcWiaU2Y473BzDZf6HPBDuMyaQ&s"
+    },
+    {
+      "id": 3,
+      "name": "Stack Overflow Blog",
+      "author" : "Sophia Martinez",
+      "description": "Provides insights, guides, and stories from the world's largest developer community, covering a wide range of programming topics.",
+      "imageUrl": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/239bbb2ffc7b90b1fb82fed80082f783b432a55d-2400x1260.png?w=1200&h=630&auto=format&dpr=2"
+    },
+    {
+      "id": 4,
+      "name": "DigitalOcean Community",
+      "author" : "David kim",
+      "description": "Offers hands-on tutorials and guides on full-stack development, cloud computing, and modern web frameworks.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1AcQaQfsfo6la3-cqCRHpCvDWnxUDPPt8PXmRaXxwEOYaXf-8qkNnRXwqtkZNXcKnGrk&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "name": "Web.dev",
+      "author" : "Emma Wilson",
+      "description": "Delivers in-depth, data-driven articles on web performance, best practices, security, and modern web technologies.",
+      "imageUrl": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222184908/web-development1.png"
+    }
+  ]
+  
+}
+  
