@@ -13,22 +13,33 @@ fetch(endPoint)
     }
     list.innerHTML = "";
     const countHeader = document.createElement("h6");
-    countHeader.textContent = ` ${blogs.length} posts`;
+    countHeader.innerHTML = `<em id="how">${blogs.length} posts:</em>`;
     list.appendChild(countHeader)
 
 blogs.forEach(blog => {
     const item = document.createElement('div')
     item.innerHTML = `
+    <div class ="p-1" style = "margin-left:10px">
     <strong style ="">${blog.name}</strong>
     <p>${blog.author}</p>
+    </div>
     `
     item.style.cursor = "pointer"
+    item.dataset.id = blog.id; 
     item.onclick = () => blogDetails(blog)
     list.appendChild(item);
 })
 blogDetails(blogs[0])
 })
 function blogDetails(blog){
+    const currentlySelected = list.querySelector('.selected');
+  if (currentlySelected) {
+    currentlySelected.classList.remove('selected');
+  }
+  const newItemToSelect = list.querySelector(`div[data-id="${blog.id}"]`);
+  if (newItemToSelect) {
+    newItemToSelect.classList.add('selected');
+  }
   details.innerHTML = `
     <div class ="blog-header">
      <h2>${blog.name}</h2>

@@ -68,9 +68,14 @@ body, html {
     width: 500px;
   }
   .selected {
-    background-color: red;
-    color: white; /* Optional: improve text visibility */
+    background-color: #bde0fe; 
+    border-right: 4px solid #98c1d9;
   }
+  #how{
+    margin-left: 40px;
+    font-size: larger;
+  }
+  
   
   
    
