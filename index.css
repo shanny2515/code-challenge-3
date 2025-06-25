@@ -1,3 +1,78 @@
 form{
     display: none;
 }
+header{
+    text-align: center;
+    font-family: cursive;
+    font-weight: 900;
+    margin-bottom: 0%;
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+#body{
+    display: flex;
+    gap: 200px;
+    margin-left:20px;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(https://img.freepik.com/free-vector/gradient-hexagonal-background_23-2148952241.jpg?semt=ais_hybrid&w=740);
+    background-size: cover;
+  }
+  .container-fluid {
+    padding-left: 0;
+  }
+  #all{
+    margin: 200px;
+    margin-top: 50px;
+  }
+  main{
+    display: flex;
+    gap: 20px;
+  }
+  #addPost{
+   width: 370px;
+  }
+  #reset{
+    border-color:#3a86ff;
+    color: #3a86ff;
+    float: inline-end;
+  }
+  #reset:active{
+    background-color: white;
+  }
+  .blog-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+  }
+  .button-group{
+    margin-left: 5px;
+  }
+  .blog-header h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #343a40;
+  }
+   img {
+    width: 900px;
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 8px; 
+  }
+  #editForms{
+    width: 500px;
+  }
+  .selected {
+    background-color: red;
+    color: white; /* Optional: improve text visibility */
+  }
+  
+  
+   
+  
+  

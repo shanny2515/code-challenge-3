@@ -9,34 +9,39 @@
     <title>Online Journal.</title>
 </head>
 <body class="container-fluid">
-    <header>
-        <h1>Online Journal</h1>
-        <p>Keep track of your blogs</p>
-    </header>
-    <section>
-        <h5>Journal posts</h5>
-        <div id="blog-list"></div>
-    </section>
-    <div id="blog-details"></div>
-    <button type="submit" id="add post-btn">Add a new blog</button>
-    <form id="form">
-         <label for="blogs-name">The name of the blog</label><br>
-        <input type="text" id="blog-name" name="blogs-name" placeholder="name" required><br><br>
-
-        <label for="blogs-author">The Author</label><br>
-        <input type="text" id="blog-author" name="blogs-author" required><br><br>
-
-        <label for="image">Image URL</label><br>
-        <input type="image" src="" alt="blogs-image" id="image" name="image" required><br><br>
-
-        <textarea name="blog-content" id="blog-description" placeholder="Write your blog content"></textarea><br><br>
-         
-        <button type="submit" id="submit">Add Blog</button>
-    </form>
-    <footer>
-
-    </footer>
-
-   <script src="./index.js"></script> 
+    <div id="all">
+        <header>
+            <h1>Online Journal</h1>
+            <p>Keep track of your blogs</p>
+        </header>
+        <main>
+            <div class="border rounded-lg p-3 bg-sky-50" style="width: 400px;">
+                <h2 style="font-family: fantasy; font-weight: 900;">Journal posts.</h2>
+                <div id="blogList"></div>
+            </div>
+            <div id="blogDetails" class="border p-3 bg-sky-50 rounded-lg"></div>
+        </main>
+        <div id="addPost" class="border bg-sky-50 mt-3 p-2 rounded-lg">
+            <button type="button" id="addPostBtn" class="btn btn-primary">Add a new blog</button>
+                <form id="form" class="">
+                    <input type="text" id="blog-name" name="name" placeholder="Name of the blog" class="border-b p-2 w-100"><br><br>
+                    <input type="text" id="blog-author" name="author" placeholder="The Author" class="border-b p-2 w-100"><br><br>
+                    <input type="url" id="image" name="imageUrl" placeholder="Image URL" class="border-b p-2 w-100"><br><br>
+                    <textarea name="description" id="blog-description" placeholder="Write your blog content" class="border-b p-2 w-100"></textarea><br><br>
+                    <button type="submit" id="submit" class="btn btn-secondary">Add Blog</button>
+                    <button type="reset" id="reset" class="btn btn red">Cancel</button>
+                </form>
+        </div>
+            <form id="edit-post-form" class=" border bg-sky-50 mt-3 p-2 rounded-lg" style="display: none;">
+                <h4>Update Post Details</h4>
+                <input type="text" name="name" id="edit-name" class="border-b p-2 w-100"><br><br>
+                <input type="text" name="author" id="edit-author" class="border-b p-2 w-100"><br><br>
+                <input type="url" id="image" name="imageUrl" class="border-b p-2 w-100"><br><br>
+                <textarea name="description" id="blog-description"  class="border-b p-2 w-100"></textarea><br><br>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Update Post</button>
+                <button type="button" id="cancel-edit" class="bg-gray-400 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-md">Cancel</button>
+            </form>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
